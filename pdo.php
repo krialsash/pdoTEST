@@ -14,7 +14,7 @@ if (!empty($_POST["name"]) && !empty($_POST["description"]) && !empty($_POST["cr
           $result = $pdo_statement->execute();
 	var_dump($pdo_statement->errorInfo());
 
-//		header("location:index.php");
+header("location:index.php");
 
 }
 
