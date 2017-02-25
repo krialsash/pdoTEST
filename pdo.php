@@ -1,7 +1,6 @@
-
 <?php
 
-include_once('conn.php');
+require_once 'conn.php';
 
 
 if (!empty($_POST["name"]) && !empty($_POST["description"]) && !empty($_POST["created_at"])) {
@@ -12,10 +11,9 @@ if (!empty($_POST["name"]) && !empty($_POST["description"]) && !empty($_POST["cr
           $pdo_statement->bindValue(":description", $_POST['description']);
           $pdo_statement->bindValue(":created_at", $_POST['created_at']);
           $result = $pdo_statement->execute();
-	var_dump($pdo_statement->errorInfo());
+//	var_dump($pdo_statement->errorInfo());
 
 header("location:index.php");
 
 }
 
-?>

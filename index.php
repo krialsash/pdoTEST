@@ -12,3 +12,12 @@ foreach($result as $row) {
     echo  $row['name']. ' - '. $row['description']. ' - '. $row['created_at'].'<br />';
 }
 
+?>
+
+<?php
+$sql = "UPDATE article SET name = :getName(), 
+description = :getDescription(),
+ created_at = :getCreatedAt()  
+ WHERE id= :getId()";
+$pdo_statement = $pdo_conn->prepare($sql);
+$pdo_statement->execute();
