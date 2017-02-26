@@ -21,10 +21,17 @@ $sql = ('SELECT * FROM article WHERE id = :id');
 $pdo_statement = $pdo_conn->prepare($sql);
 $pdo_statement->execute(array(':id' => $ID));
 $result = $pdo_statement->fetch();
+
+foreach($result as $row){
+    $row['name'];
+    $row['description'];
+    $row['created_at'];
+}
 ?>
-<form method="post" action="index.php">
-    <input type="text" name="name" placeholder="name">
-    <input type="text" name="description" placeholder="description">
-    <input type="text" name="created_at" placeholder="created_at">
-    <input type="submit">
+<form method="post" action="edit.php">
+    <input type="text" name="name" placeholder="name"  value="<?php echo $row['name'];?>">
+    <input type="text" name="description" placeholder="description"  value="<?php echo  $row['description'];?>">
+    <input type="text" name="created_at" placeholder="created_at"  value="<?php echo $row['created_at'];?>">
+    <input type="hidden" name="id" value=<?php echo $_GET['id'];?>>
+    <input type="submit" name="update" value="Update">
 </form>
