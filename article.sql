@@ -4,4 +4,4 @@ CREATE TABLE `article` (
   `description` text CHARACTER SET utf8 NOT NULL,
   `created_at` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHA                                                                                              RSET=latin1

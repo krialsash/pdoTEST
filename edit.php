@@ -3,7 +3,9 @@ require_once 'conn.php';
 
 // select * from article Where id
 // -> form
-if (empty($_POST["name"]) || empty($_POST["description"]) || empty($_POST["created_at"])) {
+if (!isset($_POST['name']) && !isset($_POST['description']) && !isset($_POST['created_at'])){
+
+
     $sql = "UPDATE article SET name = :name, 
 description = :description,
  created_at = :created_at 
