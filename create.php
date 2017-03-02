@@ -3,8 +3,8 @@
     <html>
       <head>
         <meta charset="utf-8">
-<!--         <link href="css/bootstrap.css" rel="stylesheet">-->
-<!--        <link rel="stylesheet" href="css/style.css">-->
+         <link href="css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
                  <title>phpFirstCRUD</title>
       </head>
       <body>
