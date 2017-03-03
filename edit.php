@@ -3,7 +3,7 @@ require_once 'conn.php';
 
 // select * from article Where id
 // -> form
-if (!isset($_POST['name']) && !isset($_POST['description']) && !isset($_POST['created_at']) && !isset($_POST['id'])){
+if (!empty($_POST['name']) && !empty($_POST['description']) && !empty($_POST['created_at']) && !empty($_POST['id'])){
     $sql = "UPDATE article SET name = :name, 
 description = :description,
  created_at = :created_at 
@@ -16,25 +16,21 @@ description = :description,
     $pdo_statement->execute();
 }
 
-$ID = $_POST['id'];
 $sql = ('SELECT * FROM article WHERE id = :id');
 $pdo_statement = $pdo_conn->prepare($sql);
-$pdo_statement->execute(array(':id' => $ID));
+$pdo_statement->execute(array(':id' => $_GET['id']));
 $result = $pdo_statement->fetch();
-foreach($result as $row){
-    $row['name'];
-    $row['description'];
-    $row['created_at'];
-}
 ?>
     <form method="post" action="edit.php">
-        <input type="text" name="name" placeholder="name"  value="<?php echo $row['name'];?>">
-        <input type="text" name="description" placeholder="description"  value="<?php echo  $row['description'];?>">
-        <input type="text" name="created_at" placeholder="created_at"  value="<?php echo $row['created_at'];?>">
-        <input type="hidden" name="id" value=<?php echo $_POST['id'];?>>
-        <input type="submit" name="update" value="Update" >
+        <input type="text" name="name" placeholder="name" value="<?php echo $result['name']; ?>" required/>
+
+        <input type="text" name="description" placeholder="description" value="<?php echo $result['description']?>" required/>
+        <input type="text" name="created_at" placeholder="created_at"  value="<?php echo $result['created_at']?>" required/>
+        <input type="hidden" name="id" value="<?php echo $_GET['id'] ?>" >
+        <input type="submit">
     </form>
 <?php
+
 if (isset($_POST['name']) && isset($_POST['description']) && isset($_POST['created_at'])) {
     $sql = "UPDATE article SET name = :name, 
 description = :description,
@@ -55,4 +51,5 @@ description = :description,
 }
 
 
-?>
+
+
