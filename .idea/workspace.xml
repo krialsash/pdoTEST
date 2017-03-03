@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8cea18ac-b389-4ae5-a3d5-78467ca534f6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/create.php" afterPath="$PROJECT_DIR$/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delete.php" afterPath="$PROJECT_DIR$/delete.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit.php" afterPath="$PROJECT_DIR$/edit.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,21 +23,31 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="coton@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="coton.article" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/41f1de16/7a83c6dd-d40e-46ba-9b15-097640e87252/coton.article">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -55,26 +65,28 @@
       <file leaf-file-name="edit.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="40" column="44" lean-forward="false" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+            <state relative-caret-position="360">
+              <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
               <folding>
-                <marker date="1488495494310" expanded="true" signature="149:299" ph="UPDATE artic... " />
-                <marker date="1488495494310" expanded="true" signature="155:299" ph="update artic... " />
-                <marker date="1488495494310" expanded="true" signature="417:449" ph="SELECT * FRO... article" />
-                <marker date="1488495494310" expanded="true" signature="1067:1167" ph="UPDATE artic... " />
-                <marker date="1488495494310" expanded="true" signature="1067:1171" ph="UPDATE artic... " />
+                <marker date="1488544178831" expanded="true" signature="283:394" ph="UPDATE artic... " />
+                <marker date="1488544178831" expanded="true" signature="283:398" ph="UPDATE artic... " />
+                <marker date="1488544178831" expanded="true" signature="289:394" ph="update artic... " />
+                <marker date="1488544178831" expanded="true" signature="762:794" ph="SELECT * FRO... article" />
+                <marker date="1488544178831" expanded="true" signature="1071:1521" ph="..." />
+                <marker date="1488544178831" expanded="true" signature="1634:1734" ph="UPDATE artic... " />
+                <marker date="1488544178831" expanded="true" signature="1634:1738" ph="UPDATE artic... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pdo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pdo.php">
+      <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/delete.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="42" />
+            <state relative-caret-position="120">
+              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
               <folding>
-                <marker date="1488310771995" expanded="true" signature="140:234" ph="INSERT INTO article... " />
+                <marker date="1488539193479" expanded="true" signature="41:73" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -84,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <marker date="1488310085950" expanded="true" signature="41:62" ph="SELECT * FRO... article" />
               </folding>
@@ -103,7 +115,6 @@
         <option value="$PROJECT_DIR$/firstPhp.php" />
         <option value="dbtable:/41f1de16/dac462c9-b613-4b25-b26d-1bae7ffbaea2/users.form" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/delete.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/article.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7a83c6dd-d40e-46ba-9b15-097640e87252/console.sql" />
@@ -112,6 +123,7 @@
         <option value="$PROJECT_DIR$/add.php" />
         <option value="$PROJECT_DIR$/create.php" />
         <option value="dbtable:/41f1de16/7a83c6dd-d40e-46ba-9b15-097640e87252/coton.article" />
+        <option value="$PROJECT_DIR$/delete.php" />
         <option value="$PROJECT_DIR$/edit.php" />
       </list>
     </option>
@@ -147,6 +159,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -161,7 +174,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -173,7 +185,7 @@
     <property name="node.js.selected.package.eslint" value="" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.standard" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pdo__CRUD" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="settings.editor.selected.configurable" value="database.main" />
@@ -256,7 +268,8 @@
       <workItem from="1488309829805" duration="3201000" />
       <workItem from="1488394156729" duration="8011000" />
       <workItem from="1488405754112" duration="2076000" />
-      <workItem from="1488486059697" duration="4735000" />
+      <workItem from="1488486059697" duration="4778000" />
+      <workItem from="1488530879296" duration="10384000" />
     </task>
     <task id="LOCAL-00001" summary="code_style fixed">
       <created>1488032470340</created>
@@ -328,11 +341,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488399410224</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="article file">
+      <created>1488495535757</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1488495535757</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55695000" />
+    <option name="totallyTimeSpent" value="66122000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -348,25 +368,25 @@
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19203188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19521913" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49721116" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.071207434" sideWeight="0.5091633" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13147411" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49721116" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0882353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.071207434" sideWeight="0.49083665" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0882353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0882353" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884902" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49721116" order="6" side_tool="false" content_ui="tabs" />
@@ -408,12 +428,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/edit.php</url>
-          <line>12</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/edit.php</url>
-          <line>40</line>
+          <line>54</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
@@ -433,15 +448,15 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/41f1de16/7a83c6dd-d40e-46ba-9b15-097640e87252/coton.article">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -450,11 +465,13 @@
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <marker date="1488495494310" expanded="true" signature="149:299" ph="UPDATE artic... " />
-            <marker date="1488495494310" expanded="true" signature="155:299" ph="update artic... " />
-            <marker date="1488495494310" expanded="true" signature="417:449" ph="SELECT * FRO... article" />
-            <marker date="1488495494310" expanded="true" signature="1067:1167" ph="UPDATE artic... " />
-            <marker date="1488495494310" expanded="true" signature="1067:1171" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="283:394" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="283:398" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="289:394" ph="update artic... " />
+            <marker date="1488544178831" expanded="true" signature="762:794" ph="SELECT * FRO... article" />
+            <marker date="1488544178831" expanded="true" signature="1071:1521" ph="..." />
+            <marker date="1488544178831" expanded="true" signature="1634:1734" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="1634:1738" ph="UPDATE artic... " />
           </folding>
         </state>
       </provider>
@@ -510,25 +527,27 @@
         <state relative-caret-position="150">
           <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
           <folding>
-            <marker date="1488495494310" expanded="true" signature="149:299" ph="UPDATE artic... " />
-            <marker date="1488495494310" expanded="true" signature="155:299" ph="update artic... " />
-            <marker date="1488495494310" expanded="true" signature="417:449" ph="SELECT * FRO... article" />
-            <marker date="1488495494310" expanded="true" signature="1067:1167" ph="UPDATE artic... " />
-            <marker date="1488495494310" expanded="true" signature="1067:1171" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="283:394" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="283:398" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="289:394" ph="update artic... " />
+            <marker date="1488544178831" expanded="true" signature="762:794" ph="SELECT * FRO... article" />
+            <marker date="1488544178831" expanded="true" signature="1071:1521" ph="..." />
+            <marker date="1488544178831" expanded="true" signature="1634:1734" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="1634:1738" ph="UPDATE artic... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/41f1de16/7a83c6dd-d40e-46ba-9b15-097640e87252/coton.article">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -544,7 +563,7 @@
         <state relative-caret-position="135">
           <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding>
-            <marker date="1488141126947" expanded="true" signature="60:92" ph="DELETE FROM " />
+            <marker date="1488539193479" expanded="true" signature="41:73" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -604,11 +623,13 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1488495494310" expanded="true" signature="149:299" ph="UPDATE artic... " />
-            <marker date="1488495494310" expanded="true" signature="155:299" ph="update artic... " />
-            <marker date="1488495494310" expanded="true" signature="417:449" ph="SELECT * FRO... article" />
-            <marker date="1488495494310" expanded="true" signature="1067:1167" ph="UPDATE artic... " />
-            <marker date="1488495494310" expanded="true" signature="1067:1171" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="283:394" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="283:398" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="289:394" ph="update artic... " />
+            <marker date="1488544178831" expanded="true" signature="762:794" ph="SELECT * FRO... article" />
+            <marker date="1488544178831" expanded="true" signature="1071:1521" ph="..." />
+            <marker date="1488544178831" expanded="true" signature="1634:1734" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="1634:1738" ph="UPDATE artic... " />
           </folding>
         </state>
       </provider>
@@ -618,7 +639,7 @@
         <state relative-caret-position="135">
           <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding>
-            <marker date="1488141126947" expanded="true" signature="60:92" ph="DELETE FROM " />
+            <marker date="1488539193479" expanded="true" signature="41:73" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -678,11 +699,13 @@
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <marker date="1488495494310" expanded="true" signature="149:299" ph="UPDATE artic... " />
-            <marker date="1488495494310" expanded="true" signature="155:299" ph="update artic... " />
-            <marker date="1488495494310" expanded="true" signature="417:449" ph="SELECT * FRO... article" />
-            <marker date="1488495494310" expanded="true" signature="1067:1167" ph="UPDATE artic... " />
-            <marker date="1488495494310" expanded="true" signature="1067:1171" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="283:394" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="283:398" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="289:394" ph="update artic... " />
+            <marker date="1488544178831" expanded="true" signature="762:794" ph="SELECT * FRO... article" />
+            <marker date="1488544178831" expanded="true" signature="1071:1521" ph="..." />
+            <marker date="1488544178831" expanded="true" signature="1634:1734" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="1634:1738" ph="UPDATE artic... " />
           </folding>
         </state>
       </provider>
@@ -782,16 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <marker date="1488141126947" expanded="true" signature="60:92" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/article.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -823,24 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <marker date="1488310085950" expanded="true" signature="41:62" ph="SELECT * FRO... article" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pdo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -851,16 +846,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/41f1de16/7a83c6dd-d40e-46ba-9b15-097640e87252/coton.article">
-      <provider editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/add.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -872,16 +862,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://dbtable:/41f1de16/7a83c6dd-d40e-46ba-9b15-097640e87252/coton.article">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <marker date="1488310085950" expanded="true" signature="41:62" ph="SELECT * FRO... article" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <marker date="1488539193479" expanded="true" signature="41:73" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="40" column="44" lean-forward="false" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+        <state relative-caret-position="360">
+          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
           <folding>
-            <marker date="1488495494310" expanded="true" signature="149:299" ph="UPDATE artic... " />
-            <marker date="1488495494310" expanded="true" signature="155:299" ph="update artic... " />
-            <marker date="1488495494310" expanded="true" signature="417:449" ph="SELECT * FRO... article" />
-            <marker date="1488495494310" expanded="true" signature="1067:1167" ph="UPDATE artic... " />
-            <marker date="1488495494310" expanded="true" signature="1067:1171" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="283:394" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="283:398" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="289:394" ph="update artic... " />
+            <marker date="1488544178831" expanded="true" signature="762:794" ph="SELECT * FRO... article" />
+            <marker date="1488544178831" expanded="true" signature="1071:1521" ph="..." />
+            <marker date="1488544178831" expanded="true" signature="1634:1734" ph="UPDATE artic... " />
+            <marker date="1488544178831" expanded="true" signature="1634:1738" ph="UPDATE artic... " />
           </folding>
         </state>
       </provider>
