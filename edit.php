@@ -31,7 +31,7 @@ foreach($result as $row){
         <input type="text" name="name" placeholder="name"  value="<?php echo $row['name'];?>">
         <input type="text" name="description" placeholder="description"  value="<?php echo  $row['description'];?>">
         <input type="text" name="created_at" placeholder="created_at"  value="<?php echo $row['created_at'];?>">
-        <input type="hidden" name="id" value=<?php echo $_GET['id'];?>>
+        <input type="hidden" name="id" value=<?php echo $_POST['id'];?>>
         <input type="submit" name="update" value="Update" >
     </form>
 <?php
