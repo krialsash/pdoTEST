@@ -1,5 +1,5 @@
 <?php
-require_once 'conn.php';
+require_once 'model.php';
 
 // select * from article Where id
 // -> form

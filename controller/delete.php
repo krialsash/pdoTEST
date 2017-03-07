@@ -1,6 +1,6 @@
 <?php
 
-require_once 'conn.php';
+require_once 'model.php';
 
 $sql = "DELETE FROM article WHERE id=:id";
 
