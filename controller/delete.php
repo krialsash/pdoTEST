@@ -1,11 +1,7 @@
 <?php
 
-require_once 'model.php';
+require_once '../model/model.php';
 
-$sql = "DELETE FROM article WHERE id=:id";
+delete_id($_GET['id']);
 
-$pdo_statement = $pdo_conn->prepare($sql);
-$pdo_statement->bindValue(":id", $_GET['id']);
-$pdo_statement->execute();
-
-header('location:index.php');
+//header('location:index.php');
