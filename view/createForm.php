@@ -1,4 +1,4 @@
-<form method="post" action="create.php">
+<form method="post" action="../controller/create.php">
     <label for="name">name:</label>
     <input type="text" name="name" placeholder="name">
     <label for="description">description</label>

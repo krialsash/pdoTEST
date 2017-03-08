@@ -27,9 +27,9 @@ function create($name, $description, $created_at)
     $pdo_statement->bindValue(":name", $name);
     $pdo_statement->bindValue(":description", $description);
     $pdo_statement->bindValue(":created_at", $created_at);
-    $result = $pdo_statement->execute();
+    $pdo_statement->execute();
 
-    return $result;
+    return $pdo_conn->lastInsertId();
 }
 
 function posts()

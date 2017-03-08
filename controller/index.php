@@ -1,9 +1,10 @@
 <?php
 require_once '../model/model.php';
 
-posts();
+$sel = posts();
 
-require_once '../view/createFormEd.php';
+require_once '../view/listForm.php';
+
 
 
 
