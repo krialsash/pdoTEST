@@ -9,7 +9,7 @@ if (!empty($_POST['name']) && !empty($_POST['description']) && !empty($_POST['cr
 
 post_id($_GET['id']));
 
-require_once '../view/createFormUpdt.php';
+require_once '../view/createFormEd.php';
 
 
 if (isset($_POST['name']) && isset($_POST['description']) && isset($_POST['created_at'])) {
@@ -17,7 +17,6 @@ if (isset($_POST['name']) && isset($_POST['description']) && isset($_POST['creat
 
 //    header("location:index.php");
 }
-
-
+require_once '../view/createFormUpdt.php';
 
 
