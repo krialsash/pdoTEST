@@ -6,4 +6,4 @@ require_once '../model/model.php';
 
 require_once '../view/listForm.php';
 
-//header('location:delete.php?id='.$id);
+header('location:index.php'.$id);
