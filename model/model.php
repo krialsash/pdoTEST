@@ -1,14 +1,18 @@
 <?php
+class Article{
+
+  private $dbhost = "localhost";
+  private $dbname = "coton";
+  private $dataBase_username = 'root';
+  private $dataBase_password = 'root';
+  public $pdo_conn;
 
 function getConection()
 {
-    $dbhost = "localhost";
-    $dbname = "coton";
-    $dataBase_username = 'root';
-    $dataBase_password = 'root';
-    $pdo_conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dataBase_username, $dataBase_password);
+//    $this->pdo_conn = null;
+    $this->pdo_conn = new PDO("mysql:host=$this->dbhost;dbname=$this->dbname", $this->dataBase_username, $this->dataBase_password);
 
-    return $pdo_conn;
+    return $this->pdo_conn;
 }
 
 /**
@@ -20,16 +24,16 @@ function getConection()
  */
 function create($name, $description, $created_at)
 {
-    $pdo_conn = getConection();
+    $this->getConection();
     $sql = "INSERT INTO article (name, description, created_at) VALUES ( :name, :description, :created_at)";
 
-    $pdo_statement = $pdo_conn->prepare($sql);
+    $pdo_statement = $this->pdo_conn->prepare($sql);
     $pdo_statement->bindValue(":name", $name);
     $pdo_statement->bindValue(":description", $description);
     $pdo_statement->bindValue(":created_at", $created_at);
     $pdo_statement->execute();
 
-    return $pdo_conn->lastInsertId();
+    return $this->lastInsertId();
 }
 
 function posts()
@@ -98,4 +102,6 @@ function delete_id($id)
     $result = $pdo_statement->execute();
 
     return $result;
+}
+
 }
