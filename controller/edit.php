@@ -10,7 +10,7 @@ if (!empty($_POST['name']) && !empty($_POST['description']) && !empty($_POST['cr
 
 }
 $post_id = new Article();
-$post = $post_id->post_id($_GET['id']);
+$post = $post_id->postById($_GET['id']);
 
 require_once '../view/editForm.php';
 

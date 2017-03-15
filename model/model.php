@@ -9,98 +9,122 @@ class Article
     private $dataBase_password = 'root';
     public $pdo_conn;
 
-    public function getConnection()
+    private function getConnection()
     {
-        $this->pdo_conn = null;
-        $this->pdo_conn = new PDO("mysql:host=$this->dbhost;dbname=$this->dbname", $this->dataBase_username, $this->dataBase_password);
+        $pdo_conn = new PDO("mysql:host=$this->dbhost;dbname=$this->dbname", $this->dataBase_username, $this->dataBase_password);
 
-        return $this->pdo_conn;
+        return $pdo_conn;
     }
 
-
-
-    function create($name, $description, $creadet_at)
+    /**
+     * @param $name
+     * @param $description
+     * @param $created_at
+     * @return string
+     */
+    public function create($name, $description, $created_at)
     {
+        $getConn = $this->getConnection();
         $sql = "INSERT INTO article (name, description, created_at) VALUES ( :name, :description, :created_at)";
 
-        $pdo_statement = $this->pdo_conn->prepare($sql);
-        $pdo_statement->bindValue(":name", $this->name);
-        $pdo_statement->bindValue(":description", $this->description);
-        $pdo_statement->bindValue(":created_at", $this->created_at);
+        $pdo_statement = $getConn->prepare($sql);
+        $pdo_statement->bindValue(":name", $name);
+        $pdo_statement->bindValue(":description", $description);
+        $pdo_statement->bindValue(":created_at", $created_at);
         $pdo_statement->execute();
 
-        return $this->pdo_conn->lastInsertId();
+        return $getConn->lastInsertId();
     }
-}
 
-
-
-    function posts()
+    /**
+     * @return array
+     */
+    public function posts()
     {
+        $getConn = $this->getConnection();
         $sql = "SELECT * FROM article";
-        $pdo_statement = $this->pdo_conn->prepare($sql);
+        $pdo_statement = $getConn->prepare($sql);
         $pdo_statement->execute();
         $result = $pdo_statement->fetchAll();
 
         return $result;
     }
-
-
-
-    function update($name, $description, $created_at, $id)
+    /**
+     * @param $name
+     * @param $description
+     * @param $created_at
+     * @param $id
+     * @return bool
+     */
+    public function update($name, $description, $created_at, $id)
     {
+        $getConn = $this->getConnection();
         $sql = "UPDATE article SET name = :name, 
 description = :description,
  created_at = :created_at 
  WHERE id = :id";
-        $pdo_statement = $this->pdo_conn->prepare($sql);
-        $pdo_statement->bindValue(":name", $this->name);
-        $pdo_statement->bindValue(":description", $this->description);
-        $pdo_statement->bindValue(":created_at", $this->created_at);
-        $pdo_statement->bindValue(":id", $this->id);
+        $pdo_statement = $getConn->prepare($sql);
+        $pdo_statement->bindValue(":name", $name);
+        $pdo_statement->bindValue(":description", $description);
+        $pdo_statement->bindValue(":created_at", $created_at);
+        $pdo_statement->bindValue(":id", $id);
         $result = $pdo_statement->execute();
 
         return $result;
     }
-}
 
-
-    function post_id($id)
+    /**
+     * @param $id
+     * @return mixed
+     */
+    public function postById($id)
     {
+        $getConn = $this->getConnection();
         $sql = ('SELECT * FROM article WHERE id = :id');
-        $pdo_statement = $this->pdo_conn->prepare($sql);
-        $pdo_statement->execute(array(':id' => $this->id));
+        $pdo_statement = $getConn->prepare($sql);
+        $pdo_statement->execute(array(':id' => $id));
         $result = $pdo_statement->fetch();
 
         return $result;
     }
 
-
-
-
-    function update_id($name, $description, $creadet_at)
+    /**
+     * @param $name
+     * @param $description
+     * @param $created_at
+     * @param $id
+     * @return bool
+     */
+    public function updateById($name, $description, $created_at, $id)
     {
+
+        $getConn = $this->getConnection();
         $sql = "UPDATE article SET name = :name, 
 description = :description,
  created_at = :created_at 
  WHERE id = :id";
 
-        $pdo_statement = $this->pdo_conn->prepare($sql);
-        $pdo_statement->bindValue(":name", $this->name);
-        $pdo_statement->bindValue(":description", $this->description);
-        $pdo_statement->bindValue(":created_at", $this->created_at);
-        $pdo_statement->bindValue(":id", $this->id);
+        $pdo_statement = $getConn->prepare($sql);
+        $pdo_statement->bindValue(":name", $name);
+        $pdo_statement->bindValue(":description", $description);
+        $pdo_statement->bindValue(":created_at", $created_at);
+        $pdo_statement->bindValue(":id", $id);
         $result = $pdo_statement->execute();
 
         return $result;
     }
 
 
-    function delete_id($id)
+    /**
+     * @param $id
+     * @return bool
+     */
+    public function deleteById($id)
     {
+        $getConn = $this->getConnection();
         $sql = "DELETE FROM article WHERE id=:id";
-        $pdo_statement = $this->pdo_conn->prepare($sql);
-        $pdo_statement->bindValue(":id", $this->id);
+        $pdo_statement = $getConn->prepare($sql);
+        $pdo_statement->bindValue(":id", $id);
         $result = $pdo_statement->execute();
 
         return $result;

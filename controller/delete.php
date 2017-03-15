@@ -2,7 +2,7 @@
 
 require_once '../model/model.php';
  $del = new Article();
- $sel = $del->delete_id($_GET['id']);
+ $sel = $del->deleteById($_GET['id']);
 
 require_once '../view/listForm.php';
 
