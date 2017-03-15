@@ -1,7 +1,6 @@
 <?php
 
-
-class Datebase
+class Article
 {
 
     private $dbhost = "localhost";
@@ -10,31 +9,17 @@ class Datebase
     private $dataBase_password = 'root';
     public $pdo_conn;
 
-    function getConnection()
+    public function getConnection()
     {
-
+        $this->pdo_conn = null;
         $this->pdo_conn = new PDO("mysql:host=$this->dbhost;dbname=$this->dbname", $this->dataBase_username, $this->dataBase_password);
 
         return $this->pdo_conn;
     }
 
-}
 
 
-
-class Product
-{
-    private $pdo_conn;
-
-    public $name;
-    public $description;
-    public $created_at;
-
-    public function __construct($db){
-        $this->pdo_conn = $db;
-    }
-
-    function create()
+    function create($name, $description, $creadet_at)
     {
         $sql = "INSERT INTO article (name, description, created_at) VALUES ( :name, :description, :created_at)";
 
@@ -48,11 +33,7 @@ class Product
     }
 }
 
-class Posts
-{
-    public function __construct($db){
-        $this->pdo_conn = $db;
-    }
+
 
     function posts()
     {
@@ -63,19 +44,10 @@ class Posts
 
         return $result;
     }
-}
 
-class Updt
-{
-    public $name;
-    public $description;
-    public $created_at;
-    public $id;
 
-    public function __construct($db){
-        $this->pdo_conn = $db;
-    }
-    function update()
+
+    function update($name, $description, $created_at, $id)
     {
         $sql = "UPDATE article SET name = :name, 
 description = :description,
@@ -91,15 +63,9 @@ description = :description,
         return $result;
     }
 }
-class Category
-{
-    public $id;
 
-    public function __construct($db){
-        $this->pdo_conn = $db;
-    }
 
-    function post_id()
+    function post_id($id)
     {
         $sql = ('SELECT * FROM article WHERE id = :id');
         $pdo_statement = $this->pdo_conn->prepare($sql);
@@ -108,19 +74,11 @@ class Category
 
         return $result;
     }
-}
 
-class Edit
-{
-    public $name;
-    public $description;
-    public $created_at;
-    public $id;
 
-    public function __construct($db){
-        $this->pdo_conn = $db;
-    }
-    function update_id()
+
+
+    function update_id($name, $description, $creadet_at)
     {
         $sql = "UPDATE article SET name = :name, 
 description = :description,
@@ -136,15 +94,9 @@ description = :description,
 
         return $result;
     }
-}
-class Delete
-{
-    public $id;
 
-    public function __construct($db){
-        $this->pdo_conn = $db;
-    }
-    function delete_id()
+
+    function delete_id($id)
     {
         $sql = "DELETE FROM article WHERE id=:id";
         $pdo_statement = $this->pdo_conn->prepare($sql);
@@ -153,4 +105,5 @@ class Delete
 
         return $result;
     }
+
 }
