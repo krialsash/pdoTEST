@@ -1,7 +1,7 @@
 <?php
 require_once '../model/model.php';
-
-$sel = posts();
+$selected = new Article();
+$sel =$selected->posts();
 
 require_once '../view/listForm.php';
 
